@@ -12,14 +12,19 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(63, 63, 70, 0.4);
         }
+        .roblox-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100 font-sans selection:bg-red-500 selection:text-white">
 
     <div class="h-48 md:h-64 bg-zinc-900 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-red-600/30 to-transparent z-10"></div>
-        <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=2070" 
-             class="w-full h-full object-cover opacity-40" alt="Banner Background">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070" 
+             class="w-full h-full object-cover opacity-40" alt="Gaming Banner">
     </div>
 
     <header class="max-w-5xl mx-auto px-6 -mt-20 relative z-20">
@@ -32,8 +37,8 @@
             </div>
             
             <div class="flex-1 text-center md:text-left mb-2">
-                <h1 class="text-4xl md:text-5xl font-black italic tracking-tighter">JP1414 <i class="fas fa-check-circle text-blue-500 text-2xl align-middle ml-2"></i></h1>
-                <p class="text-zinc-400 font-medium">@jp1414 • Conteúdo exclusivo e novidades</p>
+                <h1 class="text-4xl md:text-5xl font-black italic tracking-tighter uppercase">JP1414 <i class="fas fa-check-circle text-blue-500 text-2xl align-middle ml-2"></i></h1>
+                <p class="text-zinc-400 font-medium">@jp1414 • Minecraft, Roblox & Jogos Aleatórios</p>
             </div>
 
             <div class="flex gap-3 mb-2">
@@ -50,35 +55,39 @@
         <aside class="lg:col-span-1 space-y-6">
             <section class="glass-card p-6 rounded-2xl">
                 <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-                    <i class="fas fa-info-circle text-red-500"></i> Sobre o Canal
+                    <i class="fas fa-gamepad text-red-500"></i> Sobre o Canal
                 </h3>
                 <p class="text-zinc-400 text-sm leading-relaxed">
-                    Bem-vindo ao espaço oficial do **JP1414**! Aqui o foco é trazer o melhor conteúdo de [Insira seu tema aqui, ex: Games, Tecnologia ou Vlogs]. 
+                    E aí! Eu sou o **JP1414**. O meu canal é focado em trazer gameplay de jogos aleatórios, com um carinho especial por **Minecraft** e **Roblox**. 
                     <br><br>
-                    O canal foi criado para compartilhar experiências, dicas e muita diversão com a nossa comunidade. Junte-se a nós nessa jornada!
+                    Embora esses sejam os principais, de vez em quando eu saio da rotina para postar vídeos de outros jogos variados. Se você gosta de diversidade e diversão, o lugar é aqui!
                 </p>
                 
                 <div class="mt-6 space-y-3 border-t border-zinc-800 pt-4">
                     <div class="flex items-center gap-3 text-sm text-zinc-300">
-                        <i class="fas fa-chart-line text-zinc-500 w-5"></i> +100k Visualizações
+                        <i class="fas fa-cube text-green-500 w-5"></i> Minecraft
                     </div>
                     <div class="flex items-center gap-3 text-sm text-zinc-300">
-                        <i class="fas fa-calendar-alt text-zinc-500 w-5"></i> Vídeos toda semana
+                        <i class="fas fa-play text-red-500 w-5"></i> Roblox
                     </div>
                     <div class="flex items-center gap-3 text-sm text-zinc-300">
-                        <i class="fas fa-globe-americas text-zinc-500 w-5"></i> Brasil
+                        <i class="fas fa-random text-blue-500 w-5"></i> Jogos Aleatórios
                     </div>
                 </div>
             </section>
 
             <section class="glass-card p-6 rounded-2xl">
-                <h3 class="text-xl font-bold mb-4">Redes Sociais</h3>
-                <div class="grid grid-cols-2 gap-3">
-                    <a href="#" class="bg-zinc-800 p-3 rounded-xl flex items-center justify-center hover:bg-zinc-700 transition-colors">
-                        <i class="fab fa-instagram text-xl"></i>
+                <h3 class="text-xl font-bold mb-4 italic">Links Oficiais</h3>
+                <div class="grid grid-cols-1 gap-3">
+                    <a href="https://www.roblox.com/pt/users/3248267560/profile" target="_blank" 
+                       class="bg-zinc-800 p-4 rounded-xl flex items-center gap-4 hover:bg-zinc-700 transition-all border border-zinc-700">
+                        <i class="fas fa-square text-2xl"></i>
+                        <span class="font-bold">Meu Roblox</span>
                     </a>
-                    <a href="#" class="bg-zinc-800 p-3 rounded-xl flex items-center justify-center hover:bg-zinc-700 transition-colors">
-                        <i class="fab fa-discord text-xl"></i>
+                    <a href="https://discord.gg/dEnfT6gPvy" target="_blank" 
+                       class="bg-[#5865F2] p-4 rounded-xl flex items-center gap-4 hover:brightness-110 transition-all shadow-lg shadow-[#5865F2]/20">
+                        <i class="fab fa-discord text-2xl text-white"></i>
+                        <span class="font-bold text-white">Comunidade Discord</span>
                     </a>
                 </div>
             </section>
@@ -87,8 +96,8 @@
         <div class="lg:col-span-2 space-y-8">
             <section>
                 <div class="flex justify-between items-end mb-6">
-                    <h3 class="text-2xl font-bold italic tracking-tight">Últimos Vídeos</h3>
-                    <a href="https://www.youtube.com/@jp1414/videos" target="_blank" class="text-red-500 text-sm font-bold hover:underline">Ver tudo</a>
+                    <h3 class="text-2xl font-bold italic tracking-tight">Vídeos em Destaque</h3>
+                    <a href="https://www.youtube.com/@jp1414/videos" target="_blank" class="text-red-500 text-sm font-bold hover:underline">Ver tudo no YouTube</a>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -97,11 +106,11 @@
                             <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity z-10">
                                 <i class="fas fa-play text-4xl text-white"></i>
                             </div>
-                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=60" class="w-full h-full object-cover">
-                            <span class="absolute bottom-2 right-2 bg-black/80 px-2 py-1 text-xs font-bold rounded">10:45</span>
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=600&q=60" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-green-600 px-2 py-0.5 text-[10px] font-black rounded uppercase">Minecraft</span>
                         </div>
-                        <h4 class="mt-3 font-bold group-hover:text-red-500 transition-colors line-clamp-2">Título do Último Vídeo Postado no JP1414</h4>
-                        <p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">2.4K views • 2 dias atrás</p>
+                        <h4 class="mt-3 font-bold group-hover:text-red-500 transition-colors line-clamp-2">Aventura Épica no Minecraft - JP1414</h4>
+                        <p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Gameplay • @jp1414</p>
                     </div>
 
                     <div class="group cursor-pointer">
@@ -109,11 +118,11 @@
                             <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity z-10">
                                 <i class="fas fa-play text-4xl text-white"></i>
                             </div>
-                            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=60" class="w-full h-full object-cover">
-                            <span class="absolute bottom-2 right-2 bg-black/80 px-2 py-1 text-xs font-bold rounded">08:12</span>
+                            <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=600&q=60" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-red-600 px-2 py-0.5 text-[10px] font-black rounded uppercase">Roblox</span>
                         </div>
-                        <h4 class="mt-3 font-bold group-hover:text-red-500 transition-colors line-clamp-2">Especial de Inscritos: O que vem por aí?</h4>
-                        <p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">5.1K views • 1 semana atrás</p>
+                        <h4 class="mt-3 font-bold group-hover:text-red-500 transition-colors line-clamp-2">Testando Mapas Novos no Roblox!</h4>
+                        <p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Diversão • @jp1414</p>
                     </div>
                 </div>
             </section>
@@ -121,8 +130,8 @@
     </main>
 
     <footer class="mt-24 border-t border-zinc-900 py-12 text-center text-zinc-600">
-        <p class="font-bold text-zinc-400">JP1414 &copy; 2024</p>
-        <p class="text-sm">Desenvolvido para a comunidade oficial.</p>
+        <p class="font-bold text-zinc-400 italic">JP1414 &copy; 2024</p>
+        <p class="text-sm">Minecraft, Roblox e muito mais.</p>
     </footer>
 
 </body>
