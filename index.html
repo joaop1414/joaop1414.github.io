@@ -3,205 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celular do JP</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        .button {
-            display: block;
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            width: 200px;
-        }
-        .hidden {
-            display: none;
-        }
-        .slider-container {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-        .slider-container input {
-            margin-right: 10px;
-        }
-        .button-container {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .video-container {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>JP1414 - Canal YouTube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <h1>Celular do JP</h1>
-    <button class="button" onclick="handleFalar()">Falar</button>
-    <button class="button" onclick="handleBrilho()">Brilho</button>
-    <button class="button" onclick="handleVolume()">Volume</button>
-    <button class="button" onclick="handleTela()">Tela</button>
-    <button class="button" onclick="handleAppInteraction()">Interação com o App</button>
-    <button class="button" onclick="handleFlashbang()">Flashbang</button>
-    <button class="button" onclick="handleAbrirApp()">Abrir App</button>
-    <button class="button" onclick="handleVibrar()">Vibrar</button>
-    <button class="button" onclick="handleLive()">Ver Live do JP por Aqui</button>
-    <button class="button" onclick="handleMensagem()">Mensagem</button>
-    
-    <div id="falar-container" class="hidden">
-        <input type="text" id="falar-input" placeholder="O que é para falar?">
-        <button class="button" onclick="submitFalar()">Enviar</button>
-    </div>
-    
-    <div id="brilho-container" class="hidden">
-        <div class="slider-container">
-            <input type="range" id="brilho-slider" min="0" max="100" value="50" oninput="updateBrilhoValue()">
-            <span id="brilho-value">50%</span>
+<body class="bg-zinc-900 text-white font-sans">
+
+    <header class="h-64 bg-gradient-to-r from-red-600 to-zinc-800 flex items-center justify-center">
+        <h1 class="text-5xl font-black tracking-tighter uppercase italic">JP1414</h1>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 -mt-16">
+        <div class="flex flex-col items-center">
+            <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="w-32 h-32 rounded-full border-4 border-zinc-900 shadow-xl bg-zinc-700">
+            <h2 class="mt-4 text-3xl font-bold">@jp1414</h2>
+            <p class="text-zinc-400 mt-2 text-center max-w-md">
+                Bem-vindo ao meu canal! Aqui você encontra os melhores conteúdos sobre [Seu Nicho]. Inscreva-se para não perder nada!
+            </p>
+            
+            <div class="mt-6 flex gap-4">
+                <a href="https://www.youtube.com/@jp1414?sub_confirmation=1" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105">
+                    INSCREVER-SE
+                </a>
+                <a href="https://www.youtube.com/@jp1414" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-3 rounded-full font-bold border border-zinc-700 transition-all">
+                    VER CANAL
+                </a>
+            </div>
         </div>
-        <button class="button" onclick="submitBrilho()">Enviar</button>
-    </div>
-    
-    <div id="volume-container" class="hidden">
-        <div class="slider-container">
-            <input type="range" id="volume-slider" min="0" max="100" value="50" oninput="updateVolumeValue()">
-            <span id="volume-value">50%</span>
+
+        <hr class="my-12 border-zinc-800">
+
+        <section>
+            <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                <i class="fab fa-youtube text-red-600"></i> Vídeos em Destaque
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-zinc-800 rounded-xl overflow-hidden hover:ring-2 ring-red-500 transition-all">
+                    <div class="aspect-video bg-zinc-700 flex items-center justify-center text-zinc-500 italic">Thumb do Vídeo</div>
+                    <div class="p-4">
+                        <h4 class="font-bold line-clamp-2">Título do seu vídeo mais recente do canal JP1414</h4>
+                        <p class="text-sm text-zinc-400 mt-2">1.2 mil visualizações • há 2 dias</p>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-800 rounded-xl overflow-hidden hover:ring-2 ring-red-500 transition-all">
+                    <div class="aspect-video bg-zinc-700 flex items-center justify-center text-zinc-500 italic">Thumb do Vídeo</div>
+                    <div class="p-4">
+                        <h4 class="font-bold line-clamp-2">Como fazer algo incrível - JP1414 Especial</h4>
+                        <p class="text-sm text-zinc-400 mt-2">5 mil visualizações • há 1 semana</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-20 py-10 bg-zinc-950 text-center text-zinc-500 text-sm">
+        <p>&copy; 2024 JP1414. Todos os direitos reservados.</p>
+        <div class="flex justify-center gap-4 mt-4 text-lg">
+            <i class="fab fa-instagram cursor-pointer hover:text-white"></i>
+            <i class="fab fa-twitter cursor-pointer hover:text-white"></i>
+            <i class="fab fa-discord cursor-pointer hover:text-white"></i>
         </div>
-        <button class="button" onclick="submitVolume()">Enviar</button>
-    </div>
-    
-    <div id="tela-container" class="hidden">
-        <button class="button" onclick="submitDesligarTela()">Desligar</button>
-        <button class="button" onclick="submitLigarTela()">Ligar</button>
-    </div>
-    
-    <div id="app-container" class="hidden">
-        <div class="button-container">
-            <button class="button" onclick="submitAppInteraction('<')"><</button>
-            <button class="button" onclick="submitAppInteraction('○')">○</button>
-            <button class="button" onclick="submitAppInteraction('|||')">|||</button>
-        </div>
-    </div>
-    
-    <div id="abrir-app-container" class="hidden">
-        <input type="text" id="abrir-app-input" placeholder="Nome do pacote do app">
-        <button class="button" onclick="submitAbrirApp()">Enviar</button>
-    </div>
-    
-    <div id="live-video" class="hidden video-container">
-        <iframe id="live-frame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-    </div>
-    
-    <script>
-        function handleFalar() {
-            document.getElementById('falar-container').classList.toggle('hidden');
-        }
+    </footer>
 
-        function submitFalar() {
-            const falar = document.getElementById('falar-input').value;
-            window.location.href = `https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/falar?falar=${falar}`;
-        }
-
-        function handleBrilho() {
-            document.getElementById('brilho-container').classList.toggle('hidden');
-        }
-
-        function updateBrilhoValue() {
-            const value = document.getElementById('brilho-slider').value;
-            document.getElementById('brilho-value').innerText = `${value}%`;
-        }
-
-        function submitBrilho() {
-            const brilho = document.getElementById('brilho-slider').value;
-            window.location.href = `https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/Brilho?brilho=${brilho}`;
-        }
-
-        function handleVolume() {
-            document.getElementById('volume-container').classList.toggle('hidden');
-        }
-
-        function updateVolumeValue() {
-            const value = document.getElementById('volume-slider').value;
-            document.getElementById('volume-value').innerText = `${value}%`;
-        }
-
-        function submitVolume() {
-            const volume = document.getElementById('volume-slider').value;
-            window.location.href = `https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/volume?volume=${volume}`;
-        }
-
-        function handleTela() {
-            document.getElementById('tela-container').classList.toggle('hidden');
-        }
-
-        function submitDesligarTela() {
-            window.location.href = 'https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/desligar tela';
-        }
-
-        function submitLigarTela() {
-            window.location.href = 'https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/ligar tela';
-        }
-
-        function handleAppInteraction() {
-            document.getElementById('app-container').classList.toggle('hidden');
-        }
-
-        function submitAppInteraction(action) {
-            window.location.href = `https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/sair app?AcaoSair=${action}`;
-        }
-
-        function handleFlashbang() {
-            window.location.href = 'https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/flashbank';
-        }
-
-        function handleAbrirApp() {
-            document.getElementById('abrir-app-container').classList.toggle('hidden');
-        }
-
-        function submitAbrirApp() {
-            const app = document.getElementById('abrir-app-input').value;
-            window.location.href = `https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/abrir app?app=${app}`;
-        }
-
-        function handleVibrar() {
-            window.location.href = 'https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/vibrar';
-        }
-
-        function handleLive() {
-            const liveVideoContainer = document.getElementById('live-video');
-            const iframe = document.getElementById('live-frame');
-            iframe.src = 'https://www.youtube.com/embed/live_stream?channel=UC1in2u2A4GhzOR2InqlLkOQ';
-            liveVideoContainer.classList.toggle('hidden');
-        }
-
-        function handleMensagem() {
-            document.getElementById('falar-container').classList.toggle('hidden');
-            document.getElementById('falar-input').placeholder = "Mensagem";
-            document.getElementById('falar-container').querySelector('button').onclick = submitMensagem;
-        }
-
-        function submitMensagem() {
-            const mensagem = document.getElementById('falar-input').value;
-            window.location.href = `https://trigger.macrodroid.com/056ccb2c-97a0-4b8e-a7b6-cb00948c8e6f/mensagem?falar=${mensagem}`;
-        }
-    </script>
 </body>
 </html>
